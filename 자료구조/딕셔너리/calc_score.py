@@ -18,8 +18,8 @@ for student in student_list:
     kor = student["kor"]
     eng = student["eng"]
     math = student["math"]
-    total = kor + eng + math
-    average = total / (len(student)-1) # 과목수 : 이름 항목 제외 '-1'
+    total = kor + eng + math #총점
+    average = total / (len(student)-1) # 평균 = 총점/과목수 : 이름 항목 제외 '-1'
     print(f"{name}\t{kor}\t{eng}\t{math}\t{average:.2f}") # .2f : 소수점 둘째자리, .1f : 소수점 첫째자리
 
 
